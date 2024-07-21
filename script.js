@@ -338,6 +338,7 @@ var scoreCounter = 0;
 var startButton = document.querySelector(".gameButtons > button:nth-child(2)");
 var leftButton = document.querySelector(".gameButtons > button:nth-child(1)");
 var rightButton = document.querySelector(".gameButtons > button:nth-child(3)");
+const audio = document.getElementById('gamebg');
 var gameInterval;
 var gameEndTimeout;
 var moveLeftInterval; 
@@ -462,6 +463,7 @@ function startGame() {
     generateFruits();
     gameInterval = setInterval(generateFruits, 2000); //spawn fruit every 2 seconds
     gameEndTimeout = setTimeout(endGame, 30000); // End game after 30 seconds
+    audio.play(); //play bg music
 }
 
 // Function to end the game
