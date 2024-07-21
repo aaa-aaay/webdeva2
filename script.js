@@ -339,6 +339,7 @@ var startButton = document.querySelector(".gameButtons > button:nth-child(2)");
 var leftButton = document.querySelector(".gameButtons > button:nth-child(1)");
 var rightButton = document.querySelector(".gameButtons > button:nth-child(3)");
 const audio = document.getElementById('gamebg');
+const sfxaudio = document.getElementById('fruitsfx');
 var gameInterval;
 var gameEndTimeout;
 var moveLeftInterval; 
@@ -451,6 +452,7 @@ function generateFruits() {
             scoreCounter++; //increase points
             scorePoint.textContent = "Score: " + scoreCounter; //display score
             console.log("Fruit caught! Score: " + scoreCounter); 
+            sfxaudio.play(); //play fruit audio
         }
     }, 10);
 }
