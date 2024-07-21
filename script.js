@@ -533,6 +533,34 @@ document.getElementById('toggle-button').addEventListener('click', toggleFullscr
 
 
 
+// ********Back to top button*******
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the button
+    let mybutton = document.getElementById("back-top");
+
+    // When the user scrolls down, show the button
+    window.onscroll = function() { scrollFunction(); };
+
+    function scrollFunction() {
+        //scroll by 20px
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When click , scroll to the top 
+    mybutton.onclick = function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    };
+});
+
+
+
+
 
 
 
