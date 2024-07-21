@@ -403,13 +403,12 @@ nav ul li button:hover {
 /*******PAGE 2*********/
 #page2 { 
     background: rgb(255, 140, 0);     
-    border: 5px solid rgb(19, 247, 57);
 }
 #page2 p {
     padding: 5% 3%;
     width: 80%;
     color: rgb(44, 167, 16);
-    border: 5px solid rgb(19, 247, 57);
+    border: 5px solid rgb(19, 103, 64);
     border-radius: 15px;
 
     position: relative;
